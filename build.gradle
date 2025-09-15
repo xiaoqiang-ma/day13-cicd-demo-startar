@@ -42,7 +42,7 @@ tasks.named('test') {
 
 sonar {
     properties {
-        property "sonar.projectKey", "xiaoqiang-ma_day13-CICD"
+        property "sonar.projectKey", "xiaoqiang-ma_cicd-demo"
         property "sonar.organization", "xiaoqiang-ma"
         property "sonar.host.url", "https://sonarcloud.io"
         property "sonar.sources", "src/main/java"
