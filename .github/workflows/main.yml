@@ -139,6 +139,7 @@ jobs:
         run: npm install -g @railway/cli
 
       - name: Deploy to Railway App Service
+        if: github.event_name != 'pull_request'
         run: |
           echo "Starting deployment to Railway..."
           railway up --service ${{ secrets.RAILWAY_SERVICE_ID }}
